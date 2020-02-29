@@ -3,7 +3,8 @@ node {
       git 'https://github.com/Ramfunc/samplebootmvn'     
      }
      stage('Compile-Package'){
-      sh 'clean -Dmaven.clean.failOnError=false package'     
+     '
+      sh 'mvn clean -Dmaven.clean.failOnError=false package'     
      }
 
 
