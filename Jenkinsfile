@@ -23,7 +23,7 @@ pipeline {
     post {
         always {
             archiveArtifacts artifacts: '**/*.jar.*', onlyIfSuccessful: true
-            junit 'build/reports/**/*.xml'
+            
         }
     }
 }
