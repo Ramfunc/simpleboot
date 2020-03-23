@@ -10,12 +10,12 @@ pipeline {
 		
         stage('Build') {
             steps {
-                sh 'mvn build'
+                bash 'mvn build'
             }
         }
         stage('Test') {
             steps {
-                sh 'mvn test'
+                bash 'mvn test'
             }
         }
     }
